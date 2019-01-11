@@ -84,6 +84,19 @@ under the License.
             <% end %>
           </li>
         <% end %>
+        <!-- Start Hardcode link -->
+        <% if page_classes == 'index' %>
+          <li>
+            <a href="index-v1.html" class="toc-h1 cus-link" data-title="API v1 Enterprise">NICEPay API v1 Reference</a>
+          </li>
+          <li>
+            <a href="index-v2.html" class="toc-h1 cus-link" data-title="API v1 Profesional">NICEPay API v2 Reference</a>
+          </li>
+          <li>
+            <a href="https://template.nicepay.co.id/" class="toc-h1 cus-link" data-title="Customer Journey">Customer Journey</a>
+          </li>
+        <% end %>
+        <!-- End -->
       </ul>
       <% if current_page.data.toc_footers %>
         <ul class="toc-footer">
@@ -112,5 +125,16 @@ under the License.
         <% end %>
       </div>
     </div>
+
+    <script type="text/javascript">
+      (function (p,o,s,t,m,a,n) {
+        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+          (n = o.createElement("script")),
+          (n.id = s+t), (n.async = 1), (n.src = m), n
+        ));
+      }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+    </script>
+
   </body>
 </html>
